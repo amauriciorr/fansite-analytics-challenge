@@ -1,4 +1,3 @@
-
 # Challenge: Insight Fansite Analytics
 Given internet traffic data for a NASA fan page, perform basic analysis on the server log file.
 
@@ -51,10 +50,6 @@ After consulting the internet, it was revealed that .xmb files are simple black/
 
 ### Feature 6:
 Top 10 most popular videos by traffic
-
-
-
-#
 
 # Dependencies:
 Written in Python 3
