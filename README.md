@@ -99,3 +99,6 @@ e.g., `log.txt`
     
 In the above example, the 2nd line shows a failed login (HTTP reply code of 401) followed by a successful login (HTTP reply code of 200) two seconds later from the same IP address.
 
+# Additional Comments:
+In the future, could the person in charge of creating the explanatory illustrations please include a color-blind friendly image. I was very confused for a while and needed to have my father point out which arrows were red and which were green. 
+
