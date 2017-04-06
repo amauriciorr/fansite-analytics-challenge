@@ -58,8 +58,6 @@ with open("log_input/log.txt","r",encoding='latin-1') as f:
         resources[res]+=int(byte)
 
 
-
-
 p1= nlargest(10,resources,key = lambda j: resources[j])
 for i in p1:
   file2.write(i+'\n')
