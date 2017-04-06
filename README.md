@@ -13,8 +13,7 @@ Top 10 resources by site bandwidth consumption
 List the top 10 busiest (or most frequently visited) 60-minute periods 
 
 ### Feature 4: 
-Blocked traffic after three consecutive failed login attemps over a 20-second window
-
+Blocked traffic by host/IP addresses after three consecutive failed login attemps over a 20-second window
 
 ### Feature 5:
 Top 10 most popular resource by traffic
@@ -46,7 +45,7 @@ After ignoring .gifs, we see the following:
   /shuttle/missions/sts-70/mission-sts-70.html, 59120
   /icons/blank.xbm, 58776
 ```
-After consulting the internet, it was revealed that .xmb files are simple black/white icons. So we proceed by ignoring those. This inspired me to proceed by looking for most popular videos accessed on the site. Knowing what content generates the most traffic may be helpful in securing more visitors.
+After consulting the internet, it was revealed that .xmb files are simple black/white icons. So we proceed by ignoring those. This inspired me to look for the most popular videos accessed on the site. Knowing what content generates the most traffic may be helpful in securing more visitors.
 
 ### Feature 6:
 Top 10 most popular videos by traffic
@@ -64,12 +63,12 @@ from heapq import nlargest
 ```
 # Documentation of successful run: 
 
-![Feature 4 illustration](images/Screen%20Shot%202017-04-05%20at%208.54.15%20PM.png)
+![Proof of success illustration](images/Screen%20Shot%202017-04-05%20at%208.54.15%20PM.png)
 The only reason I am including this is because I am new to writing Python scripts. In my submission, I used the following to pass the tests
 ```
 os.chdir(os.path.abspath('.'))
 ```
-while I understand that `.` vs `..` refer to current working directory and parent of current working directory respectively, I do not fully understand why `os.chdir(os.path.abspath('..'))` allows for my code to perform the desired tasks, saves the `.txt` files in the desired locations, but fails the tests. 
+while I understand that `.` vs `..` refer to current working directory and parent of current working directory respectively, I do not fully understand why `os.chdir(os.path.abspath('..'))` allows for my code to perform the desired tasks--i.e calculates the metrics and saves the `.txt` files in the desired locations--but fails the tests. 
 
 ## Download Data
 You can download the data here: https://drive.google.com/file/d/0B7-XWjN4ezogbUh6bUl1cV82Tnc/view
@@ -86,7 +85,7 @@ Assume you receive as input, a file, `log.txt`, in ASCII format with one line pe
 
 * **HTTP reply code**
 
-* **bytes** in the reply. Some lines in the log file will list `-` in the bytes field. For the purposes of this challenge, that should be interpreted as 0 bytes.
+* **bytes** in the reply. Some lines in the log file will list `-` in the bytes field. For the purposes of this challenge, it is interpreted as 0 bytes.
 
 
 e.g., `log.txt`
@@ -100,36 +99,3 @@ e.g., `log.txt`
     
 In the above example, the 2nd line shows a failed login (HTTP reply code of 401) followed by a successful login (HTTP reply code of 200) two seconds later from the same IP address.
 
-
-## Repo directory structure
-
-    ├── README.md 
-    ├── run.sh
-    ├── src
-    │   └── process_log.py
-    ├── log_input
-    │   └── log.txt
-    ├── log_output
-    |   └── hosts.txt
-    |   └── hours.txt
-    |   └── resources.txt
-    |   └── blocked.txt
-    ├── insight_testsuite
-        └── run_tests.sh
-        └── tests
-            └── test_features
-            |   ├── log_input
-            |   │   └── log.txt
-            |   |__ log_output
-            |   │   └── hosts.txt
-            |   │   └── hours.txt
-            |   │   └── resources.txt
-            |   │   └── blocked.txt
-            ├── your-own-test
-                ├── log_input
-                │   └── your-own-log.txt
-                |__ log_output
-                    └── hosts.txt
-                    └── hours.txt
-                    └── resources.txt
-                    └── blocked.txt
