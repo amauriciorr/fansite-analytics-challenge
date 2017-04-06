@@ -1,0 +1,10 @@
+ /, 687378
+ /ksc.html, 88915
+ /shuttle/countdown/, 84821
+ /shuttle/missions/missions.html, 49648
+ /shuttle/countdown/liftoff.html, 36978
+ /history/apollo/apollo.html, 35147
+ /shuttle/missions/sts-70/mission-sts-70.html, 33018
+ /shuttle/missions/sts-71/mission-sts-71.html, 30777
+ /shuttle/missions/sts-71/images/images.html, 29732
+ /history/apollo/apollo-13/apollo-13.html, 26809

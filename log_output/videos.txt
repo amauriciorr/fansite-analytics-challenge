@@ -1,0 +1,10 @@
+ /shuttle/missions/sts-70/movies/woodpecker.mpg, 6171
+ /shuttle/missions/sts-71/movies/sts-71-tcdt-crew-walkout.mpg, 5830
+ /shuttle/missions/sts-71/movies/sts-71-launch.mpg, 4904
+ /shuttle/missions/sts-71/movies/sts-71-launch-3.mpg, 3934
+ /shuttle/missions/sts-71/movies/crew-arrival-t38.mpg, 3609
+ /history/apollo/apollo-13/movies/apo13damage.mpg, 3512
+ /shuttle/missions/sts-53/movies/sts-53-launch.mpg, 2678
+ /shuttle/missions/sts-70/movies/sts-70-launch.mpg, 2581
+ /history/apollo/apollo-13/movies/apo13home.mpg, 2426
+ /history/apollo/apollo-13/movies/apo13launch.mpg, 1727
