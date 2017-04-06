@@ -108,8 +108,6 @@ In the above example, the 2nd line shows a failed login (HTTP reply code of 401)
 
 ## Repo directory structure
 
-The directory structure for your repo should look like this:
-
     ├── README.md 
     ├── run.sh
     ├── src
